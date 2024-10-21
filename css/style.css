@@ -29,9 +29,8 @@ nav a{
     text-decoration: none;
     color: black;
     border-radius: 10px;
-    padding: 1vh;
     margin-right: 2vw;
-    padding: 2vh 2vw;
+    padding: 1vh 1vw;
     font-size: 1.5rem;
     border: solid black 2px;
 }
@@ -78,6 +77,8 @@ header p{
 /*main*/
 #instruction{
     background-color: rgb(165, 163, 163);
+    padding: 3vw;
+    border-bottom: solid black 3px;
 }
 section h2{
     display: flex;
@@ -95,11 +96,45 @@ section h2{
 
 article{
     border: solid black 3px;
-    padding: 0.5vw;
+    padding:0.5vw;
+    border-radius: 20px;
+
 }
+
+/*footer*/
+footer{
+    background-color: rgb(47, 47, 47);
+    border-top: solid black 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
 footer img{
     width: 5vw;
 }
+#footer-left{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-right{
+    display: flex;
+    gap: 3vw;
+    align-items: end;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(165, 163, 163)
+
+}
+
+
+
+
+/*media*/
 @media (width <= 400px) {
     nav{
         flex-direction: column;
