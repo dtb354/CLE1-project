@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h1 {
+    font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+h2 {
+    font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+h3 {
+    font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+p {
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.left-column p {
+    font-size: 1.5rem;
+}
+
+a.button-default {
+    display: block;
+    padding: 10px 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px solid #ff0000;
+    background-color: #ff0000;
+    position: relative;
+    
+}
+
+a.button-default:hover {
+    background-color: #FFFFFF;
+    color: #ff0000;
+}
+
+
+
+nav {
+    text-align: left;
+    color: #000000;
+    display: flex;
+    margin: 0px;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444444;
+}
+
+
+nav a {
+    text-decoration: none;
+    margin-right: 15px;
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <100>;
+    font-style: normal;
+    font-size: 27px;
+    border-radius: 10px;
+}
+
+.links a:hover {
+    background-color: #FFFFFF;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+}
+
+nav img {
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
+}
+
+.Logo {
+    display: flex;
+    margin-top: 0px;
+    font-family: "Josefin Sans", sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+header {
+    background-image: url(../images/gamer-background.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: calc(100vh - 80px);
+
+    color: rgb(255, 0, 0);
+
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding: 0px 300px 50px;
+    text-align: center;
+    border-top: 5px solid #ff0000;
+
+
+}
+
+.forms {
+    background-image: none;
+    background-color: #5e60ff;
+    min-height: calc(50vh - 80px);
+}
+
+main {
+    padding: 20px;
+}
+
+
+.header-links {
+    flex: 1;
+
+}
+
+.Instruction {
+    background-color: #444444;
+    margin: -20px;
+}
+
+.subheading-container {
+    display: flex;
+    gap: 30px;   
+    
+}
+
+.subheading-container article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.subheading-container article img {
+    width: 100%;
+    border-radius: 5px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.subheading-container article h3 {
+    margin-bottom: 0px;
+}
+
+.rating {
+    font-size: 2rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 20px;
+
+}
+
+.section1, .section3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.section5 input {
+    width: 100%;
+    height: 100px; 
+}
+
+input[type="text"], input[type="email"], input[type="date"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.section1 input, .section3 input {
+    flex: 1;
+}
+
+
+.section2, .section4, .section6, .agreement {
+    margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #5e60ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #5e60ff;
+    border: 5px #5e60ff;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: left;
+    color: #000000;
+    display: flex;
+    margin: 0px;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6e6e6;
+}
+
+footer a {
+
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <100>;
+    font-style: normal;
+    font-size: 1.5rem;
+    border-radius: 10px;
+
+}
+
+
+
+footer img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+@media (max-width: 480px) {
+
+     nav {
+          flex-direction:column;
+          justify-content: center;
+      }
+    
+     html{
+        font-size: 12px;
+     }
+
+     .subheading-container {
+        flex-direction: column;
+     }
+     
+     article {
+        margin: 10px;
+
+    }
+
+     header .right-column {
+        display: none;
+     }
+
+     header {
+        padding: 30px;
+        min-height: auto;
+     }
+
+     .links {
+        display: flex;
+        flex-direction: column;
+     }
+
+     .links a {
+        margin: 10px;
+     }
+     
+     #center-container {
+         
+         max-width: 1000px
+         
+     }
+
+     .section1, .section3 {
+        grid-template-columns: 1fr; /* Single column layout */
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction:column;
+        justify-content: center;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-links a {
+        margin: 10px;
+    }     
+}
