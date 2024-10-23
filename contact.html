@@ -3,33 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form-DQsupps</title>
+    <title>TiltBeGone-Contact</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <div class="Logo">
-            <img src="./images/lofi_generator.png">
-            <a href="index.html">DQ supps</a>
-        </div>
+            <img src="./images/Prototypelogo1.png">
+
+
         
-        <div class="links">
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+        <div>
+        <a href="index.html">Manual</a>
+        <a href="#secondnav">Form</a>
         </div>
     </nav>
 
     <header class="forms">
 
-        <div class="contact">
+        <div id="header-content">
         
         <h1>Contact</h1>
-        <p>If you have any questions or need assistance, feel free to reach out to us! Our team at DQ Supplements is here to help with product inquiries, 
-            order support, or any other concerns. 
+        <p>If you have any questions or need assistance, feel free to reach out to us! Our team at TiltBeGone is here to help with product instructions, orders or even questions. 
             Simply fill out the form below or email us directly, and we’ll get back to you as soon as possible. We look forward to hearing from you!
         </p>
 
@@ -37,90 +32,100 @@
         
         </div>
 
-
+        <div  id="secondnav" ></div>
     </header>
 
-    <form action="html.index" method="POST">
+    <section class="first">
 
-        <div class="section1">
-
-            <label for="firstname">First Name</label>
-            <input type="text" name="firstname" id="firstname" required>
-
-            <label for="lastname">Last Name</label>
-            <input type="text" name="lastname" id="lastname" required>
-
+        <h2>Form</h2>
+        <div class="contactform">
+            <form>
+                <div class="formstyling">
+                    <div>
+                        <label for="firstname">
+                            <p>First name:</p>
+                        </label>
+                        <input required type="text" id="firstname" name="firstname">
+                    </div>
+                    <div>
+                        <label for="lastname">
+                            <p>Last name:</p>
+                        </label>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+                </div>
+                <label for="email">
+                    <p>Email:</p>
+                </label>
+                <input required type="email" id="email" name="email">
+                <label for="subject">
+                    <p>What is the subject of your message</p>
+                </label>
+                <select id="subject" name="subject">
+                    <option selected disabled>
+                        <p>Choose the subject</p>
+                    </option>
+                    <option value="complaint">
+                        <p>Complaint</p>
+                    </option>
+                    <option value="question">
+                        <p>Question</p>
+                    </option>
+                    <option value="product-inquiry">Product inquiry</p>
+                    </option>
+                </select>
+                <br>
+                <label for="message">
+                    <p>Message</p>
+                </label>
+                <input type="text" id="message" name="message">
+                <p>Do you want to sign up for the newsletter:</p>
+                <div class="formstylingthree">
+                    <input required type="radio" id="newsletter" name="newsletter" value="yes">
+                    <label for="yes">
+                        <p>Yes</p>
+                    </label>
+                    <input required type="radio" id="newsletter" name="newsletter" value="no">
+                    <label for="no">
+                        <p>No</p>
+                    </label>
+                </div>
+                <div class="formstylingtwo">
+                    <input required type="checkbox" id="tos" name="tos">
+                    <label for="tos">
+                        <p>I agree with the terms of service</p>
+                    </label>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
         </div>
 
-        <div class="section2">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required>
-        </div>
-
-        <div class="section3">
-            
-            <label for="city">City</label>
-            <input type="text" name="city" id="city" required>
-            
-            <label for="birthdate">Birthdate</label>
-            <input type="date" name="birthdate" id="birthdate" required>
-
-        </div>
-
-
-        <div class="section4">
-            <label for="send-to">Subject</label>
-            <select id="send-to" name="send-to">
-            <option value="send-to" disabled selected>Pick a Subject</option>
-            <option value="0">Option 1</option>
-            <option value="1">Option 2</option>
-            <option value="2">Option 3</option>
-            <option value="3">option 4</option>
-            </select>
-        </div>
-
-        <div class="section5">
-            <label for="question">Jouw Vraag</label>
-            <input type="text" name="question" id="question" required>
-        </div>
-
-        <div class="section6"> 
-            
-            <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
-            <label for="subscribe">Subscribe to newsletter</label>
-
-        </div>
 
 
 
-        <div class="agreement">                
-            <input type="checkbox" id="agreement" name="agreement" value="agreement" required>
-            <label for="agreement">I agree to the terms and conditions</label>
-        </div>
-
-        <div class="submit">
-            <button type="submit">submit</button>
-        </div>
 
 
-     </form>
+
+
+
+
+        </form>
+    </section>
 
      <footer>
 
-        <section class="left-footer">
-        <div class="Logo">
-            <img src="./images/lofi_generator.png">
-            <a href="#">DQ supps</a>
+        <div id="footer-left">
+         <div id="logo">
+            <img src="./images/Prototypelogo1.png">
+         </div>
+         <p>© 2024 TiltBeGone</p>
         </div>
-        <p>copyright 2024 DQ Standaard</p>
-        </section>
+        
 
-        <div class="footer-links">
-        <a href="#">Privacy</a>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Cookies</a>
-        <a href="contact.html">Contact</a>
+        <div id="footer-right">
+        <a href="#">Privacy</a><a href="#">Terms & Conditions</a><a href="#">Cookies</a><a href="contact.html">Contact</a>
         </div>
+
     </footer>
 
     

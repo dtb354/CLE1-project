@@ -2,6 +2,9 @@
 *{
     margin:0
 }
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: "PT Sans", sans-serif; 
+}
 /*Nav*/
 nav{
     display: flex;
@@ -11,11 +14,14 @@ nav{
     padding: 1vw;
     border-bottom: solid black 3px;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid black;
 }
 nav img{
     background-color: rgb(165, 163, 163);
     padding: 3px;
-    width: 5vw;
+    width: 4vw;
     border-radius: 20%;
     border: solid black 2px;
 
@@ -33,6 +39,7 @@ nav a{
     padding: 1vh 1vw;
     font-size: 1.5rem;
     border: solid black 2px;
+    transition: all 0.4s ease-in-out;
 }
 
 nav a:hover{
@@ -62,7 +69,6 @@ header{
 header h1{
     font-size: 3rem;
     color: rgb(207, 202, 202);
-    font-family: "PT Sans", sans-serif;
 }
 
 header p{
@@ -70,7 +76,7 @@ header p{
     padding:2vw;
     color:rgb(207, 202, 202);
     font-size: 1.5rem;
-    font-family: "PT Sans", sans-serif;
+
 
 }
 
@@ -79,6 +85,9 @@ header p{
     background-color: rgb(165, 163, 163);
     padding: 3vw;
     border-bottom: solid black 3px;
+}
+#instruction-content{
+    flex: 1;
 }
 section h2{
     display: flex;
@@ -101,6 +110,94 @@ article{
 
 }
 
+/*form*/
+.first {
+    padding: 5vw;
+    margin: auto;
+    background-color: rgb(165, 163, 163);
+}
+
+.first h2 {
+    text-align: center;
+}
+
+
+.contactform {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 0.5vw;
+    border-radius: 4px;
+    border: 1px solid black;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+#firstname{
+    flex: 1;
+}
+#lastname{
+    width: 100%;
+}
+
+input:hover {
+    transform: scale(1.02);
+}
+
+select:hover {
+    transform: scale(1.02);
+}
+
+select {
+    width: 104.89%;
+    padding: 0.5vw;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit] {
+    background-color: rgb(47, 47, 47);
+    border-radius: 4px;
+    width: 104.89%;;
+    color: white;
+    padding: 0.5vw;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=radio]:hover, input[type=checkbox]:hover, input[type=select]:hover{
+    cursor: pointer;
+}
+form p {
+    margin: 0.3vw 0 0 0;
+    font-size: small;
+}
+
+.formstyling, .formstylingtwo, .formstylingthree {
+    display: flex;
+    gap: 1vw;
+    
+}
+
+#email {
+    width: 100%;
+}
+
+#message {
+    width: 100%;
+    height: 10vw;
+}
+
+
+input[type=date] {
+    width: 141%;
+}
+input:user-invalid {
+    border: 3px solid #D42a2a;
+} 
 /*footer*/
 footer{
     background-color: rgb(47, 47, 47);
@@ -117,6 +214,7 @@ footer img{
 #footer-left{
     display: flex;
     flex-direction: column;
+    color: rgb(165, 163, 163);
 }
 
 #footer-right{
@@ -127,24 +225,35 @@ footer img{
 
 footer a{
     text-decoration: none;
-    color: rgb(165, 163, 163)
-
+    color: rgb(165, 163, 163);
+    transition: all 0.4s ease-in-out;
+}
+footer a:hover{
+    color: white;
 }
 
 
 
 
 /*media*/
+@media (hover: hover) {
+
+}
 @media (width <= 400px) {
+
     nav{
-        flex-direction: column;
         text-align: center;
+        position: relative;
     }
     nav a{
         width: 90%;
+        padding: 1.9vw;
     }
     nav img{
-        width: 50%;
+        width: 15%;
+    }
+    header p{
+        font-size: 1.2rem;
     }
     #header-content{
         text-align: left;
@@ -158,5 +267,25 @@ footer a{
     }
     article{
         padding: 4vw;
+    }
+    .first{
+        padding-left: 0;
+    }
+    input{
+        padding: 2vw;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer img{
+        width: 20%;
+    }
+    #footer-left{
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo{
+        display: flex;
+        justify-content: center;
     }
 }
