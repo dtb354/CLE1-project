@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin:0
+}
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: "PT Sans", sans-serif; 
+}
+/*Nav*/
+nav{
+    display: flex;
+    gap: 2vw;
+    background-color: rgb(47, 47, 47);
+    align-items: center;
+    padding: 1vw;
+    border-bottom: solid black 3px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid black;
+}
+nav img{
+    background-color: rgb(165, 163, 163);
+    padding: 3px;
+    width: 4vw;
+    border-radius: 20%;
+    border: solid black 2px;
+
+}
+#nav-links{
+    display: flex;
+}
+
+nav a{
+    background-color: #D42a2a;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    margin-right: 2vw;
+    padding: 1vh 1vw;
+    font-size: 1.5rem;
+    border: solid black 2px;
+    transition: all 0.4s ease-in-out;
+}
+
+nav a:hover{
+    background-color: rgb(95, 11, 11);
+}
+
+/*Header*/
+header{
+    background-image: url(/images/gamer-background.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-bottom: solid black 2px;
+    height: 90vh;
+    justify-content: center;
+    
+}
+
+#header-content{
+    text-align: center;
+    max-width: calc(50vw);
+}
+
+header h1{
+    font-size: 3rem;
+    color: rgb(207, 202, 202);
+}
+
+header p{
+    margin:1vw;
+    padding:2vw;
+    color:rgb(207, 202, 202);
+    font-size: 1.5rem;
+
+
+}
+
+/*main*/
+#instruction{
+    background-color: rgb(165, 163, 163);
+    padding: 3vw;
+    border-bottom: solid black 3px;
+}
+#instruction-content{
+    flex: 1;
+}
+section h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: "PT Sans", sans-serif; 
+}
+
+#subheading-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    padding: 1vw;
+}
+
+article{
+    border: solid black 3px;
+    padding:0.5vw;
+    border-radius: 20px;
+
+}
+
+/*form*/
+.first {
+    padding: 5vw;
+    margin: auto;
+    background-color: rgb(165, 163, 163);
+}
+
+.first h2 {
+    text-align: center;
+}
+
+
+.contactform {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 0.5vw;
+    border-radius: 4px;
+    border: 1px solid black;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+#firstname{
+    flex: 1;
+}
+#lastname{
+    width: 100%;
+}
+
+input:hover {
+    transform: scale(1.02);
+}
+
+select:hover {
+    transform: scale(1.02);
+}
+
+select {
+    width: 104.89%;
+    padding: 0.5vw;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit] {
+    background-color: rgb(47, 47, 47);
+    border-radius: 4px;
+    width: 104.89%;;
+    color: white;
+    padding: 0.5vw;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=radio]:hover, input[type=checkbox]:hover, input[type=select]:hover{
+    cursor: pointer;
+}
+form p {
+    margin: 0.3vw 0 0 0;
+    font-size: small;
+}
+
+.formstyling, .formstylingtwo, .formstylingthree {
+    display: flex;
+    gap: 1vw;
+    
+}
+
+#email {
+    width: 100%;
+}
+
+#message {
+    width: 100%;
+    height: 10vw;
+}
+
+
+input[type=date] {
+    width: 141%;
+}
+input:user-invalid {
+    border: 3px solid #D42a2a;
+} 
+/*footer*/
+footer{
+    background-color: rgb(47, 47, 47);
+    border-top: solid black 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+footer img{
+    width: 5vw;
+}
+#footer-left{
+    display: flex;
+    flex-direction: column;
+    color: rgb(165, 163, 163);
+}
+
+#footer-right{
+    display: flex;
+    gap: 3vw;
+    align-items: end;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(165, 163, 163);
+    transition: all 0.4s ease-in-out;
+}
+footer a:hover{
+    color: white;
+}
+
+
+
+
+/*media*/
+@media (hover: hover) {
+
+}
+@media (width <= 400px) {
+
+    nav{
+        text-align: center;
+        position: relative;
+    }
+    nav a{
+        width: 90%;
+        padding: 1.9vw;
+    }
+    nav img{
+        width: 15%;
+    }
+    header p{
+        font-size: 1.2rem;
+    }
+    #header-content{
+        text-align: left;
+        max-width: 100vw;
+    }
+    #header-content h1{
+        text-align: center;
+    }
+    #subheading-container{
+        flex-direction: column;
+    }
+    article{
+        padding: 4vw;
+    }
+    .first{
+        padding-left: 0;
+    }
+    input{
+        padding: 2vw;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer img{
+        width: 20%;
+    }
+    #footer-left{
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo{
+        display: flex;
+        justify-content: center;
+    }
+}
